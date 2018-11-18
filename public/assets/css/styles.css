@@ -1,0 +1,382 @@
+body {
+    background: #e9ebee;
+}
+
+p , ul{
+    margin: 0;
+}
+ul{
+list-style:none;
+}
+.container-fluid .nav ul{
+margin-left: 15%;
+}
+.container {
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    background: #fff;
+}
+
+.topBar {
+    background-color: #4469B0;
+    color: #fff;
+}
+
+.topFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+/* cover */
+.cover {
+    width: 100%;
+    background: #fff;
+}
+
+.cover--photo {
+    background-size: cover !important;
+    height: 315px;
+}
+
+.cover--photo--profil {
+
+    background-size: cover !important;
+    width: 136px;
+    height: 136px;
+    margin: -70px auto 20px;
+    z-index: 9;
+}
+
+.cover--photo--profil--desktop {
+
+    background-size: cover !important;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 0 -2em 1em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    z-index: 9;
+}
+
+.cover--username {
+    top: 260px;
+    left: 200px;
+    font-size: 2em;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .8);
+    z-index: 9;
+}
+
+.cover--gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, .35));
+    height: 315px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+/* nav */
+.nav--border {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.nav--border li {
+    padding: 1em 2em;
+}
+
+/* bio */
+.bio li {
+    list-style: none;
+}
+
+.bio li i {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/2lFKPP6hCjJ.png)no-repeat;
+    background-size: 61px 1062px;
+    background-position: 0 -1028px;
+    display: inline-flex;
+    height: 16px;
+    width: 16px;
+}
+
+.bio {
+    border-top: solid 1px #ebedf0;
+}
+
+.intro .box h2{
+    padding-bottom: 1em;
+}
+
+.picto {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/c6OIitBeFe4.png);
+        background-size:25px 549px;
+    background-repeat: no-repeat;
+    background-position: 0 -200px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+
+/* secondary nav */
+
+.nav--secondary {
+    border-top: 1px solid #dadde1;
+    border-bottom: 1px solid #ccd0d5;
+    background-color: #f5f6f7;
+}
+
+.nav--secondary li {
+    padding: 0.2em 1.5em;
+}
+
+/* add post input */
+
+.addpost {
+    display: flex;
+    width: 100%;
+}
+
+.addpost--photo a i {
+    width: 48px;
+    height: 48px;
+    background-size: cover !important;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.addpost--input {
+    border: 1px solid #ccd0d5;
+    background: #F2F3F5;
+    padding: 8px 12px;
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+.inputComment{
+    flex:1;
+    
+}
+
+.fileMobile{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/jgc_CgEGCv_.png);
+    background-size: 32px 2772px;
+    background-position: 0 -1451px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    left: 250px;
+    top: 10px;
+    position: absolute;
+    width: 20px;
+}
+
+/* add post desktop*/
+.inBox input[type="texte"] {
+    height: 80px;
+    width: 100%;
+    border: none;
+}
+
+.inBox input[type="file"] {
+    display: none;
+}
+
+.inBox input[type="submit"] {
+    cursor: pointer;
+    padding: 0 15px 0 15px;
+    background: #4081FF;
+    color: #fff;
+    border-radius: 1em;
+    line-height: 30px;
+    border: none;
+}
+
+.inBox label {
+    background: #EBEDF0;
+    border-radius: 1em;
+    padding: 0 15px 0 35px;
+    line-height: 30px;
+    color: #4b4f56;
+    cursor: pointer;
+}
+
+
+.inBox label i {
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y-/r/jgc_CgEGCv_.png);
+    background-size: 32px 2772px;
+    background-position: 0 -1451px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 20px;
+    left: 9px;
+    top: 21px;
+    position: absolute;
+    width: 20px;
+
+}
+
+.button-add {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 1px #ebedf0;
+    padding-top: 1em;
+}
+
+.inBox {
+    display: flex;
+    width: 100%;
+}
+
+.inBox form {
+    width: 100%;
+}
+
+/* gallery photo & friend */
+.gallery {
+    display: flex;
+}
+
+.column1, .contact-form {
+    flex: 1;
+    position:relative;
+}
+
+
+.gallery .column1 i {
+    width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
+    padding-bottom: 100%;
+}
+
+.friendsGallery--photo {
+    background-size: cover !important;
+    padding-bottom: 30%;
+}
+
+.friendGallery--user {
+    font-size: 0.7em;
+}
+
+.friendsGallery {
+    display: flex;
+    flex: 1;
+}
+
+.borderBottom {
+    border-bottom: 5px solid #fff;
+}
+
+.borderRight {
+    border-right: 5px solid #fff;
+}
+
+/* post */
+.post--photoProfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover !important;
+}
+
+.post--userName span {
+    font-weight: bold;
+}
+
+.postCover--photo {
+    background-size: cover !important;
+    padding-bottom: 40%;
+}
+
+.like-cpt .likeIcon {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/mrcmNcOTzz0.png) no-repeat;
+    background-size: 49px 674px;
+    background-position: -17px -526px;
+    height: 16px;
+    width: 16px;
+}
+
+.like-cpt {
+    border-top: solid 1px #ebedf0;
+    border-bottom: solid 1px #ebedf0;
+}
+
+
+.like--img {
+    background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/HLad5DBvHBV.png)no-repeat;
+    background-size: 500px 287px;
+    background-position: -389px -245px;
+    width: 18px;
+    height: 18px;
+
+}
+
+.comment--img {
+    background-size: 49px 674px !important;
+    background-position: -19px -197px !important;
+    width: 18px;
+    height: 18px;
+}
+
+.commentlist--photo {
+    width: 30px;
+    height: 30px;
+    background-size: cover !important;
+    border-radius: 50%;
+}
+
+.commentlist--text {
+    background: #EFF1F3;
+    border-radius: 18px;
+}
+
+.commentlist--text span {
+    font-weight: bold;
+}
+
+.like:hover,
+.comment:hover {
+    background: #F2F3F5;
+}
+
+/* error 404 page */
+
+.error404{
+    background: #081421;
+    color: #d3d7de;
+    font-family: "Courier new";
+    font-size: 18px;
+    line-height: 1.5em;
+    cursor: default;
+    height: 100vh;
+  }
+  
+  .error404 a{
+  color: #fff;
+  }
+  
+  .code-area > span {
+    display: block;
+  }
+  
+  @media screen and (max-width: 320px) {
+    .code-area {
+    font-size: 5vw;
+    min-width: auto;
+        width: 95%;
+    margin: auto;
+    padding: 5px;
+    padding-left: 10px;
+    line-height: 6.5vw;
+    }
+  }
