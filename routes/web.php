@@ -19,3 +19,9 @@ $router->get('/', [
     'as' => 'index',
     'uses' => 'MainController@home'
 ]);
+
+// route user
+$router->get('/user/{id}', [
+    'as' => 'user',
+    'uses' => 'UserController@user'
+]);
