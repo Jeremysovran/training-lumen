@@ -25,3 +25,13 @@ $router->get('/user/{id}', [
     'as' => 'user',
     'uses' => 'UserController@user'
 ]);
+
+$router->post('/post', [
+    'as' => 'userPost',
+    'uses' => 'UserController@userPost'
+]);
+
+$router->post('/post/{id}/comment', [
+    'as' => 'commentPost',
+    'uses' => 'UserController@commentPost'
+]);

@@ -124,7 +124,7 @@
                 <div class="container d-none d-lg-block">
                     <div class="row p-3">
                         <div class="inBox">
-                            <form action="" method="POST" class="contact-form" enctype="multipart/form-data">
+                            <form action="<?= route('userPost') ?>" method="POST" class="contact-form" enctype="multipart/form-data">
                                 <input type="texte" id="text" name="text" placeholder="Exprimez-vous"></textarea>
                                 <div class="button-add">
                                     <input type="file" name="picture" id="file" />
@@ -172,15 +172,14 @@
                      <?php if($comment->post_id == $currentPost->id) : ?>
                     <div class="row p-2 align-items-center">
                         <div class="commentlist--photo ml-2 mr-3" style="background:url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13510827_1738096696469099_2376030713156492362_n.png?_nc_cat=104&oh=41a26a1a1924f195fb360bb4e8da3d76&oe=5C532334) no-repeat"></div>
-                        <div class="commentlist--text p-2"><span><?= $users->name ?></span> <?= $comment->text ?></div>
+                        <div class="commentlist--text p-2"><span><?= $users->name ?></span> <?= $comment->commenter ?></div>
                     </div>
                     <?php   endif; ?>
                     <?php   endforeach; ?>
                     <div class="row p-2 align-items-center">
                         <div class="addpost--photo mr-3"><a href=""><i style="background:url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13510827_1738096696469099_2376030713156492362_n.png?_nc_cat=104&oh=41a26a1a1924f195fb360bb4e8da3d76&oe=5C532334) no-repeat;"></i></a></div>
-                        <form action="" method="get" class="inputComment">
-                            <input type="texte" name="produit" placeholder="Exprimez-vous" class="addpost--input">
-
+                        <form action="<?= route('commentPost', ['id'=>$currentPost->id]) ?>" method="post" class="inputComment">
+                            <input type="texte" name="commenter" placeholder="Exprimez-vous" class="addpost--input">
                         </form>
                     </div>
                 </div>
@@ -190,20 +189,3 @@
         </main>
     </div>
 </div>
-
-<table class="table table-dark">
-  <thead>
-    <tr>
-      <th scope="col">Nom</th>
-      <th scope="col">Type</th>
-    </tr>
-  </thead>
-  <tbody>
-      <?php foreach ($allPost as $currentPost) : ?>
-    <tr>
-      <td><?= $currentPost->text ?></td>
-      <td><?= $currentPost->picture ?></td>
-    </tr>
-    <?php endforeach ?>
-  </tbody>
-</table>

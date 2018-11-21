@@ -19,12 +19,12 @@
         <div class="container-fluid">
             <div class="row topBar pt-2 pb-2 d-lg-none">
                 <div class="col-3"><i class="fas fa-arrow-left"></i></div>
-                <div class="col-9"><?= $users->name ?></div>
+                <div class="col-9"></div>
                 
             </div>
             <div class="row topBar p-2 d-none d-lg-flex justify-content-between topFixed">
-            <div class=""><?= $users->name ?></div>
-            <div><a href="" class="text-light">deconnexion</a></div>
+            <div class=""></div>
+            <div><a href="#" class="text-light">deconnexion</a></div>
             </div>
         </div>
     </header>
