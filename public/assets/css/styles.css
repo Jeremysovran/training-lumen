@@ -113,10 +113,10 @@ margin-left: 15%;
 }
 
 .picto {
-    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/c6OIitBeFe4.png);
-        background-size:25px 549px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Mrpz1EHbccy.png);
+        background-size:97px 500px;
     background-repeat: no-repeat;
-    background-position: 0 -200px;
+    background-position: 0 -88px;
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -329,7 +329,7 @@ margin-left: 15%;
 }
 
 .commentlist--photo {
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     background-size: cover !important;
     border-radius: 50%;
@@ -338,6 +338,7 @@ margin-left: 15%;
 .commentlist--text {
     background: #EFF1F3;
     border-radius: 18px;
+
 }
 
 .commentlist--text span {

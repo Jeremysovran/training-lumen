@@ -42,8 +42,8 @@
         <div class="container">
             <div class="row p-2 d-lg-none align-items-center">
                 <div class="addpost--photo mr-3"><a href=""><i style="background:url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13510827_1738096696469099_2376030713156492362_n.png?_nc_cat=104&oh=41a26a1a1924f195fb360bb4e8da3d76&oe=5C532334) no-repeat;"></i></a></div>
-                <form action="" method="POST" class="contact-form">
-                <input type="texte" name="produit" placeholder="Exprimez-vous" class="addpost--input">
+                <form action="<?= route('userPost') ?>" method="POST" class="contact-form">
+                <input type="texte" name="text" placeholder="Exprimez-vous" class="addpost--input">
                 <label for="file" value="file" class="fileMobile"><i class="icon-add"></i></label>
             </form>
             </div>
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                     <div class="row align-items-center p-3 mt-2 mb-2 like-cpt">
-                        <i class="likeIcon mr-2"></i><span>1</span>
+                        <i class="likeIcon mr-2"></i><span></span>
                     </div>
                     <div class="row pt-2 pb-2">
                         <a class="col-6 like  pt-2 pb-2 d-flex align-items-center justify-content-center">
@@ -170,8 +170,8 @@
                     </div>
                     <?php foreach ($comments as $comment): ?>
                      <?php if($comment->post_id == $currentPost->id) : ?>
-                    <div class="row p-2 align-items-center">
-                        <div class="commentlist--photo ml-2 mr-3" style="background:url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13510827_1738096696469099_2376030713156492362_n.png?_nc_cat=104&oh=41a26a1a1924f195fb360bb4e8da3d76&oe=5C532334) no-repeat"></div>
+                    <div class="d-flex p-2 align-items-start">
+                        <div class="commentlist--photo mr-3 mt-1" style="background:url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13510827_1738096696469099_2376030713156492362_n.png?_nc_cat=104&oh=41a26a1a1924f195fb360bb4e8da3d76&oe=5C532334) no-repeat"></div>
                         <div class="commentlist--text p-2"><span><?= $users->name ?></span> <?= $comment->commenter ?></div>
                     </div>
                     <?php   endif; ?>
@@ -189,3 +189,4 @@
         </main>
     </div>
 </div>
+<?php require __DIR__.'/layout/footer.php' ?>
